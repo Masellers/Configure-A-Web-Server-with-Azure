@@ -1,7 +1,6 @@
 # Configure A Web Server with Azure
 
-Intro text
-
+In this project, we will use Microsoft Azure Cloud to create a resource group, a virtual Network & subnet, a virtual machine and configure Windows Web server IIS. This is the first Azure project I am uploading and I plan to use Azure for more complicated projects in the coming weeks.
 
 # Systems Used
 
@@ -58,11 +57,27 @@ We are going to allow port 443 and 3389 for this project but you can select othe
 
 # **Step 4: Configure Windows IIS on Virtual Machine**
 
-### 
+### Connect to VM with Remote Destop Connection
+Once the VM has finished Deploying we can click on and locate the **Public IP address** and copy that IP to our clipboard. Next, on our windows machine, we type "Remote Desktop Connection" into the start menu search bar. Once prompted, paste the IP address into the pop up and then enter your credentials from the previous step.
+
+<img src="https://i.imgur.com/KZABiZS.png" height="80%" width="80%" alt="VM5"/>
+<img src="https://i.imgur.com/yJMgNrP.png" height="80%" width="80%" alt="RDP1"/>
+<img src="https://i.imgur.com/fs1hRV7.png" height="80%" width="80%" alt="RDP3"/>
+
+### Configure Windows IIS
+The Windows VM may take a minute to fully launch but when it does, the **Server Manager** should automatically launch. If not, it can be manually launch from the start menu. We need to Click **Add roles and features** and click next until we reach the **Server Roles** page. Scroll down and select **Web server (IIS)** and then press add feature. From here we can simply click next until the final page and press install.
+
+<img src="https://i.imgur.com/0m8fWdH.png" height="80%" width="80%" alt="RDP4"/>
+<img src="https://i.imgur.com/pR7VAYt.png" height="80%" width="80%" alt="RDP5"/>
 
 # **Step 5: Test Our Web Server**
+
+###Web page test
+Once the installation is complete we can type our public ip address into a web browser and we should see the following. From here we could take code from a developer and deploy it on this web server.
+
+<img src="https://i.imgur.com/PdAWpGO.png" height="80%" width="80%" alt="Windows Server IIS"/>
 
 
 # Conclusion
 
-We have successfully scanned a target for vulnerabilities and communicated the results and recommended remediations to our client and learned about vulnerability management in the process.
+In this project we have used Microsoft Azure Cloud to create a resource group, Virtual Network & Subnet, a virtual machine and we have configured Windows Web server IIS from that VM. 
