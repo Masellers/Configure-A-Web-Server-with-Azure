@@ -81,3 +81,4 @@ Once the installation is complete we can type our public ip address into a web b
 # Conclusion
 
 In this project we have used Microsoft Azure Cloud to create a resource group, Virtual Network & Subnet, a virtual machine and we have configured Windows Web server IIS from that VM. 
+**Make sure to delete resources you dont need after completion to reduce cost.**
